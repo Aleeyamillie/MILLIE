@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Building Your First Website</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-image: url('https://i.ibb.co/1fSLFXjH/wallpaper.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      position: relative;
+      height: 250px;
+      background-image: url('https://i.ibb.co/VYcb9sfY/header2.jpg'); 
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      backdrop-filter: blur(8px);
+      background-color: rgba(0, 0, 0, 0.4);
+      z-index: 1;
+    }
+
+    header h1,
+    header p {
+      position: relative;
+      z-index: 2;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+
+    .menu {
+      margin: 30px;
+      flex-wrap: wrap;
+    }
+
+    .menu button {
+      padding: 15px 25px;
+      margin: 10px;
+      font-size: 16px;
+      border: none;
+      background-color: #be95c4;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .menu button:hover {
+      background-color: #613169;
+    }
+
+    .section {
+      display: none;
+      background-color: rgba(0, 0, 0, 0.7);
+      margin: 20px auto;
+      padding: 20px;
+      max-width: 700px;
+      border-radius: 10px;
+      text-align: justify;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .section img {
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
+    border-radius: 10px;
+    }
+
+    h2 {
+      color: #ffdd57;
+    }
+
+    audio {
+      position: fixed;
+      bottom: 10px;
+      left: 10px;
+      z-index: 10;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>HTML Basics: Building Your First Website</h1>
+    <p>Let's learn coding easily and quickly</p>
+  </header>
+
+  <div class="menu">
+    <button onclick="showSection('introduction')">Introduction</button>
+    <button onclick="showSection('main-content')">Main Content</button>
+    <button onclick="showSection('importance-html')">Importance of HTML Basic</button>
+    <button onclick="showSection('analysis-discussion')">Analysis and Discussion</button>
+    <button onclick="showSection('practical-application')">Practical Application</button>
+    <button onclick="showSection('conclusion')">Conclusion</button>
+  </div>
+
+  <div id="introduction" class="section">
+    <h2>Introduction</h2>
+    <p><img src="https://i.ibb.co/v4YtRDVg/m3.jpg" alt="Introduction Image"></p>
+    <p>HTML stands for HyperText Markup Language. It is a standard language used to create and structure content on the web. It defines the structure of web pages by using a series of elements, tags, and attributes to organize text, images, links, and other multimedia elements. HTML was introduced by Tim Berners-Lee, a computer scientist from the United Kingdom.</p>
+    <p>What makes learning basic HTML interesting?. By understanding the HTML serves as a foundational skill for web development, allowing individuals to explore more advanced languages and frameworks such as CSS and JavaScript. HTML is a markup language, not a programming language, meaning that it annotates text to specify how it is structured and displayed by web browsers. HTML consists of a series of elements and attributes that are used to mark up all the components of a document to structure it in a meaningful way.</p>
+    <p>HTML is also the basis for the creation of web pages that have been compiled by the author. Typically, HTML works with CSS Cascading Style Sheets to add style and design to web pages built with HTML and JavaScript for interactivity.</p>
+  </div>
+
+  <div id="main-content" class="section">
+    <h2>Main Content</h2>
+    <p>Before developing a website, those who want to have their first website need to download an application for HTML. For example, GitHub,W3school or anything. The creator must also know and be proficient in the basics of HTML. This is because web content is structured using HTML (HyperText Markup Language). It defines various elements of a web page, including headings, paragraphs, links, images and lists, using various tags.</p>
+    <p>A standard HTML document begins with a declaration and structure. The <code>&lt;!DOCTYPE html&gt;</code> declaration and the opening <code>&lt;html&gt;</code> tag mark the beginning of the document. The <code>&lt;head&gt;</code> section includes metadata like the page title, while the body contains the visible content. Links are created with <code>&lt;a&gt;</code> tags, and images with <code>&lt;img&gt;</code>.</p>
+    <p>Once we have mastered all the elements in HTML, only then can we start building our first website. These basic elements work together to form the foundation of any webpage. Understanding and applying them correctly is the first step in creating a functional and well-structured website.</p>
+     <img src="https://i.ibb.co/7xwS41kh/m1.jpg" alt="Study Image"> </p>
+    <img src="https://i.ibb.co/Q7rk3RQX/m2.jpg" alt="Study Image"> 
+  </div>
+
+  <div id="importance-html" class="section">
+    <h2>Importance of HTML Basic</h2>
+    <p> Learning the basics of HTML (HyperText Markup Language) is necessary, especially for beginners in web development. HTML is used to structure a website. With knowledge of HTML, it becomes possible to arrange and organize content such as text, images, links, and other elements in a structured and clean format. </p>
+    <p>This structure makes information clearer and easier to understand. HTML also supports cross-platform compatibility, allowing web pages to be viewed on desktops, tablets, and smartphones. HTML can be integrated with CSS and JavaScript for design and functionality. Next, HTML’s clear code helps search engines index pages easily. In addition, importance of  HTML is responsive where the HTML can adapt to different platforms in any devices sizes. </p>
+    <p>A single webpage can be viewed on multiple platforms using the same code. Hence, web developers need not write different codes for different devices. HTML automatically detects the device size and adapts it accordingly. Lastly, its very easier to update and maintain the website. With no mistakes in HTML code, it is easier and quicker to make changes to your web pages. This means it will save time and money when maintaining clients’ sites.</p>
+    <img src="https://i.ibb.co/VcG4hM21/m5.jpg" alt="Study Image"> 
+  </div>
+
+  <div id="analysis-discussion" class="section">
+    <h2>Analysis & Discussion</h2>
+    <p>HTML is not a programming language but is essential for website structure. For example, the <code>&lt;p&gt;</code> element defines a paragraph, and the <code>&lt;a&gt;</code> tag defines hyperlinks. HTML has many advantages that make it the foundation for web designing. HTML is easy for those who wants to learn because of its simple syntax.</p>
+    <p>It also use specific tags that help organize content more systematically. However, HTML is limited of functionality, which mean you cannot do interesting things like other programming languages can do. It needs JavaScript for interactivity and CSS for styling. HTML is literally the basis for making the layout of a website. But for design and other interactive elements, HTML is limited.</p>
+    <p>Therefore, the combination of HTML with other coding such as CSS and JavaScript is highly needed for the visual aspect. Like, color. While for JavaScript increases the interactivity of the site. HTML alone cannot build a complete website, but with CSS and JavaScript, it enables structured, interactive, and attractive sites. This highlights the necessity of combining different programming technologies in a bid to develop fully functional web applications.</p>
+    <img src="https://i.ibb.co/Z17fQMzv/m4.jpg" alt="My Cat"> 
+  </div>
+
+  <div id="practical-application" class="section">
+    <h2>Practical Application</h2>
+    <p>HTML is used in almost every website on the internet. Practical uses include creating personal blogs, portfolios, business websites, and so on. For example, online learning platforms that use basic HTML and a combination of programming languages ​​are used to systematically display course content, videos, and quizzes. HTML can be used together with CSS and JavaScript in the development of web applications and mobile applications through frameworks such as Ionic and React.</p>
+    <img src="https://i.ibb.co/r2cpq8WB/m6.jpg" alt="My Cat"> 
+  </div>
+
+  <div id="conclusion" class="section">
+    <h2>Conclusion</h2>
+    <p>In conclusion, HTML is the first foundation for developing a website. HTML has various elements, such as text, images, and links, that are arranged systematically. HTML also has limitations in terms of interactivity, so it needs to work with CSS and JavaScript to produce attractive and fully functional website content. However, HTML basics are also very important, especially for people who want to venture into the field of website development.</p>
+    <img src="https://i.ibb.co/6c0ftrq7/m7.png" alt="My Cat"> 
+  </div>
+
+  <audio id="bg-music" autoplay loop>
+    <source src="https://aleeyamillie.github.io/MILLIE/non-copyright-music-rose-water-lofi-aesthetic-music.m4a" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll('.section');
+      sections.forEach(section => {
+        section.style.display = 'none';
+      });
+      const selected = document.getElementById(id);
+      if (selected) {
+        selected.style.display = 'block';
+        selected.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    window.addEventListener('load', () => {
+      showSection('introduction'); // Show the first section by default
+
+      const music = document.getElementById('bg-music');
+      const tryPlay = () => {
+        music.play().catch(() => {
+          document.body.addEventListener('click', () => music.play(), { once: true });
+        });
+      };
+      tryPlay();
+    });
+  </script>
+
+  <footer style="text-align: center; padding: 20px; background-color: rgba(0, 0, 0, 0.5); color: #fff; margin-top: 40px;">
+    <p>&copy; 2025 Aleeya Millie Maisara. SMM10803.</p>
+  </footer>
+</body>
+</html>
