@@ -178,9 +178,7 @@
       }
     }
 
-    window.addEventListener('load', () => {
-      showSection('introduction'); // Show the first section by default
-
+    window.addEventListener('load', function () {
       const music = document.getElementById('bg-music');
       const tryPlay = () => {
         music.play().catch(() => {
